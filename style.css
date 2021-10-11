@@ -149,11 +149,13 @@ img {
 }
 
 .button {
+    display: inline-block;
     padding: 10px 8px;
     background-color: #fae;
     box-shadow: 0 4px 0 #c9b;
     border-radius: 4px;
     transition: background-color .2s ease-in, box-shadow .2s ease-in;
+    margin-top: 8px;
 }
 
 .button:hover {
@@ -176,4 +178,24 @@ img {
 
 footer{
     text-align: center;
+    margin-top: 160px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery div{
+    height: 200px;
+    flex-grow: 1;
+}
+
+.gallery div img {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+    background-color: none;
+    background: none;
 }
